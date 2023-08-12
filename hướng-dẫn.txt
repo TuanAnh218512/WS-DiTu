@@ -1,0 +1,40 @@
+Bảng Tù Nhân (Prisoners):
+
+ID tù nhân
+Tên tù nhân
+Ngày sinh
+Giới tính
+Tội danh
+Ngày bắt giữ
+Ngày đưa vào nhà tù
+Ngày dự kiến ra tù (nếu có)
+Trạng thái (đang tù, đã ra tù, đã qua đời, v.v.)
+Thời gian tích luỹ tù
+Bảng Nhân Viên Nhà Tù (Prison Staff):
+
+ID nhân viên
+Tên nhân viên
+Chức vụ
+Ngày sinh
+Giới tính
+Số điện thoại
+Địa chỉ email
+Bảng Lịch Sử Giao Dịch (Transaction History):
+
+ID giao dịch
+ID tù nhân liên quan
+Loại giao dịch (gửi tiền, nhận tiền, thăm viếng, v.v.)
+Ngày giao dịch
+Số tiền giao dịch (nếu có)
+Bảng Khu Vực Nhà Tù (Prison Sections):
+
+ID khu vực
+Tên khu vực
+Sức chứa tối đa
+Sức chứa hiện tại
+Bảng Lịch Trình (Schedule):
+
+ID lịch trình
+ID tù nhân liên quan
+Thời gian thăm viếng (nếu có)
+Hoạt động hằng ngày (thể dục, giờ nghỉ, v.v.)

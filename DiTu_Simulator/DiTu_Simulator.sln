@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.33801.447
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DiTu_Simulator", "DiTu_Simulator.csproj", "{706F6DD4-69B9-457F-905D-84FAACD7FABB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DiTuWebService", "..\DiTuWebService\DiTuWebService.csproj", "{56D6A5DB-F459-44AC-A878-B8E61F57360F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{706F6DD4-69B9-457F-905D-84FAACD7FABB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{706F6DD4-69B9-457F-905D-84FAACD7FABB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{706F6DD4-69B9-457F-905D-84FAACD7FABB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{706F6DD4-69B9-457F-905D-84FAACD7FABB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{56D6A5DB-F459-44AC-A878-B8E61F57360F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{56D6A5DB-F459-44AC-A878-B8E61F57360F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{56D6A5DB-F459-44AC-A878-B8E61F57360F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{56D6A5DB-F459-44AC-A878-B8E61F57360F}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {4E5F5011-6855-4EEB-B517-2AF1304E2B7A}
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,62 @@
+-- Tạo bảng cho thông tin tù nhân
+CREATE TABLE Prisoners (
+    prisoner_id INT PRIMARY KEY,
+    first_name VARCHAR(50),
+    last_name VARCHAR(50),
+    gender VARCHAR(10),
+    date_of_birth DATE,
+    entry_date DATE,
+    release_date DATE,
+    crime VARCHAR(200),
+    sentence_duration INT, -- Đơn vị: tháng
+    cell_number VARCHAR(20),
+    dangerous_level VARCHAR(20),
+    status VARCHAR(20) -- Trạng thái: trong tù, đã ra tù,
+);
+
+-- Tạo bảng cho thông tin nhân viên
+CREATE TABLE Staff (
+    staff_id INT PRIMARY KEY,
+    first_name VARCHAR(50),
+    last_name VARCHAR(50),
+    position VARCHAR(50),
+    department VARCHAR(50),
+    hire_date DATE,
+    salary DECIMAL(10, 2),
+    contact_number VARCHAR(20)
+);
+
+-- Tạo bảng cho thông tin về các khóa
+CREATE TABLE Cells (
+    cell_number VARCHAR(20) PRIMARY KEY,
+    capacity INT,
+    current_occupancy INT
+);
+
+-- Tạo bảng cho lịch sử khám xét và tìm kiếm trong nhà tù
+CREATE TABLE SearchHistory (
+    search_id INT PRIMARY KEY,
+    search_date DATE,
+    staff_id INT,
+    cell_number VARCHAR(20),
+    result VARCHAR(200)
+);
+
+-- Tạo bảng cho lịch sử thăm viếng
+CREATE TABLE Visitation (
+    visitation_id INT PRIMARY KEY,
+    visitor_name VARCHAR(100),
+    prisoner_id INT,
+    visit_date DATE,
+    relation_to_prisoner VARCHAR(50),
+    comments TEXT
+);
+
+-- Tạo bảng cho thông tin về hình phạt và việc làm trong nhà tù
+CREATE TABLE Punishment (
+    punishment_id INT PRIMARY KEY,
+    prisoner_id INT,
+    punishment_type VARCHAR(100),
+    punishment_date DATE,
+    description TEXT
+);
